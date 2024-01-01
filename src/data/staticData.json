@@ -1,4 +1,9 @@
 {
+    "navMenu": [
+        { "id": 0, "title": "About", "url": "/about"},
+        { "id": 1, "title": "Artist Life", "url": "/artist"},
+        { "id": 2, "title": "Contact", "url": "/contact"}
+    ],
     "landingPage": {
         "title": "MAK Psychologist",
         "description": ""
