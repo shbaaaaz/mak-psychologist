@@ -6,6 +6,10 @@
     ],
     "landingPage": {
         "title": "MAK Psychologist",
-        "description": ""
+        "description": "",
+        "primaryCta": { 
+            "text": "Book a session",
+            "url": "https://topmate.io/mak_psychologist"
+        }
     }
 }
