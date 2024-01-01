@@ -8,7 +8,15 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      
+      animation: {
+        flip: 'flip 2s ease-in-out infinite'
+      },
+      keyframes: {
+        flip: {
+          '0%': {transform: 'rotateY(0)'},
+          '100%': {transform: 'rotateY(360deg)'}
+        }
+      }
     },
   },
   plugins: [],

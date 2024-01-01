@@ -1,4 +1,5 @@
 'use client'
+
 import Image from "next/image"
 import Link from "next/link"
 import logo from '../../public/logo.png'
@@ -14,10 +15,8 @@ const MobileMenu = ({ menu }: {menu: NavMenuItem[]}) => {
   return (
     <header className="mobile-menu">
     <div className='flex justify-between items-center mx-4 py-2'>
-        <GiHamburgerMenu className='text-2xl' aria-label='menu hamburger' onClick={() => setIsMenuOpen(prevState => !prevState)}/>
-      <div>
+        <GiHamburgerMenu role='button' className='text-2xl' aria-label='menu hamburger' onClick={() => setIsMenuOpen(prevState => !prevState)}/>
         <Link href="/"><Image src={logo} alt={'logo'} width={80} height={50}/></Link>
-      </div>
         <Theme/>
     </div>
     <nav className={`py-10 w-screen h-screen bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-100 transition-transform ease-in-out duration-500 transform fixed top-0 ${isMenuOpen ? 'translate-x-0' : '-translate-x-full' }`}>
