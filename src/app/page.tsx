@@ -13,6 +13,7 @@ export default async function Home() {
     <main>
       <Hero name={name} title={title} shortBio={shortBio} heroImageURL={profilePicture.url} cta={landingPage.primaryCta}/>
       <Banner message="Believe in the process"/>
+      
     </main>
   )
 }
