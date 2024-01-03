@@ -10,7 +10,7 @@ const Hero = ({ name, title, shortBio, heroImageURL, cta } :
             cta: { text: string, url: string} }) => {
     
   return (
-    <div className='mt-12 flex flex-col md:flex-row justify-center md:justify-between items-center gap-20 px-5 md:px-20'>
+    <section className='mt-12 flex flex-col md:flex-row justify-center md:justify-between items-center gap-20 px-5 md:px-20'>
         <div className="flex flex-col gap-7 justify-center items-center md:items-start md:w-1/2"> 
         <span className='text-xl'>Meet your <span className='text-pink-600'> {title.toLowerCase()} </span></span>
         <h1 className='text-3xl md:text-5xl font-bold'>{name}</h1>
@@ -23,7 +23,7 @@ const Hero = ({ name, title, shortBio, heroImageURL, cta } :
         <div className="md:w-1/2 flex justify-end">
         <Image src={heroImageURL} alt={name} width={450} height={300}/>
         </div>
-    </div>
+    </section>
   )
 }
 

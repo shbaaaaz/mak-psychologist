@@ -4,7 +4,7 @@ import { GET_PSYCHOLOGIST_DETAILS } from './queries/query'
 const client = new GraphQLClient(process.env.NEXT_PUBLIC_CMS_ENDPOINT ?? '')
 
 interface ApiResponse {
-    psychologists: { name: string, title: string, shortBio:string, profilePicture: {
+    psychologists: { name: string, title: string, shortBio:string, about:string, profilePicture: {
         id: string,
         url: string
     } }[]
@@ -14,6 +14,7 @@ export const fetchPsychologistDetails = async () => {
     try {
         const response: ApiResponse = await client.request(GET_PSYCHOLOGIST_DETAILS)
         if ( response?.psychologists?.length > 0 ) {
+            console.log(response.psychologists)
             return response.psychologists[0]
         } else {
             throw new Error('Unexpected response format')

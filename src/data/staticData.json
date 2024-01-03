@@ -5,11 +5,14 @@
         { "id": 2, "title": "Contact", "url": "/contact"}
     ],
     "landingPage": {
-        "title": "MAK Psychologist | Monis Ahmad Khan",
-        "description": "",
+        "metaTitle": "MAK Psychologist | Monis Ahmad Khan",
+        "metaDescription": "",
         "primaryCta": { 
             "text": "Book a session",
             "url": "https://topmate.io/mak_psychologist"
+        },
+        "bio" : {
+            "title": "About Me"
         }
     }
 }
